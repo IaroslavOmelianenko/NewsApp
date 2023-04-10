@@ -25,7 +25,7 @@ object AppModule {
     fun logging() = HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)
     //when Retrofit sends any request on server, we cant see it console
-    //loggingInterseptor can show it in console with different levels of logging (BODY)
+    //loggingInterceptor can show it in console with different levels of logging (BODY)
 
     @Provides
     fun okHttpClient() = OkHttpClient.Builder()
